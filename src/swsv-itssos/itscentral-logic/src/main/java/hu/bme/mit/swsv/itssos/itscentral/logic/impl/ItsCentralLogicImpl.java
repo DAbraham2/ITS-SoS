@@ -43,6 +43,15 @@ public class ItsCentralLogicImpl implements ItsCentralLogic {
                     throw new IllegalArgumentException("Unknown SensorMessageType");
             }
         }
+        else if(sensorType == SensorType.TIMETABLE){
+            switch (messageType) {
+                case ARRIVING:
+                        vehicleCommunicator.sendBroadcastNotification(NotificationLevel.TRAIN_MIGHT_ARRIVE);
+                    break;
+                default:
+                    throw new IllegalArgumentException("Unsupported SensorMessageType");
+            }
+        }
     }
 
     @Override
