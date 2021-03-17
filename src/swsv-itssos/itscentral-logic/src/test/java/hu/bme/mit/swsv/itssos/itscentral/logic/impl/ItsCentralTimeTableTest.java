@@ -24,4 +24,10 @@ public class ItsCentralTimeTableTest {
 
         verify(vehicleCommunicator).sendBroadcastNotification(NotificationLevel.TRAIN_MIGHT_ARRIVE);
     }
+
+    @Test
+    public void TTDTrainIsLeavingTest(){
+        itsCentralLogic.reportTrain(SensorType.TIMETABLE, SensorMessageType.LEFT);
+        verify(vehicleCommunicator).sendBroadcastNotification(NotificationLevel.LOOK_AROUND);
+    }
 }

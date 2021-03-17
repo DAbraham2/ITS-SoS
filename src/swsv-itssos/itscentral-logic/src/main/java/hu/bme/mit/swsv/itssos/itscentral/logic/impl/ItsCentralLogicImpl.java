@@ -48,6 +48,9 @@ public class ItsCentralLogicImpl implements ItsCentralLogic {
                 case ARRIVING:
                         vehicleCommunicator.sendBroadcastNotification(NotificationLevel.TRAIN_MIGHT_ARRIVE);
                     break;
+                case LEFT:
+                        vehicleCommunicator.sendBroadcastNotification(NotificationLevel.LOOK_AROUND);
+                    break;
                 default:
                     throw new IllegalArgumentException("Unsupported SensorMessageType");
             }
