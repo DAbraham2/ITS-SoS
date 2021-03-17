@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="itssos-common" />
+        <module name="itscentral" />
+        <module name="itscentral-logic" />
+        <module name="example" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="example" target="11" />
+      <module name="itscentral" target="11" />
+      <module name="itscentral-logic" target="11" />
+      <module name="itssos-common" target="11" />
+      <module name="swsv-itssos" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="itscentral" options="-parameters" />
+      <module name="itscentral-logic" options="-parameters" />
+      <module name="itssos-common" options="-parameters" />
+    </option>
+  </component>
+</project>

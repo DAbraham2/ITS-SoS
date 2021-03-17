@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: eu.arrowhead:core-client-skeleton:4.1.3.11">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/arrowhead/core-client-skeleton/4.1.3.11/core-client-skeleton-4.1.3.11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/arrowhead/core-client-skeleton/4.1.3.11/core-client-skeleton-4.1.3.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/arrowhead/core-client-skeleton/4.1.3.11/core-client-skeleton-4.1.3.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
